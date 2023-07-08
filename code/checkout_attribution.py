@@ -17,10 +17,10 @@ REQUIRED_JARS = [
 class StreamJobConfig:
     job_name: str = 'checkout-attribution-job'
     jars: List[str] = field(default_factory=lambda: REQUIRED_JARS)
-    checkpoint_interval: int = 10
-    checkpoint_pause: int = 5
-    checkpoint_timeout: int = 5
-    parallelism: int = 2
+    checkpoint_interval: int = 15
+    checkpoint_pause: int = 7
+    checkpoint_timeout: int = 7
+    parallelism: int = 3
 
 
 @dataclass(frozen=True)
